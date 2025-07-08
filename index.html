@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GSPL Coin | 3D White Paper</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #f1f5f9;
+      perspective: 1000px;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: rgba(15, 23, 42, 0.9);
+      padding: 2rem 1rem;
+      text-align: center;
+      transform: rotateX(10deg);
+      animation: floatIn 1s ease-in-out forwards;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      color: #38bdf8;
+      text-shadow: 0 0 10px #38bdf8;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #94a3b8;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem 1rem;
+      transform-style: preserve-3d;
+      animation: fadeSlideIn 1.5s ease;
+    }
+
+    section {
+      background: rgba(30, 41, 59, 0.8);
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      transform: rotateY(3deg);
+      transition: transform 0.3s ease;
+    }
+
+    section:hover {
+      transform: rotateY(0deg) scale(1.02);
+    }
+
+    h2 {
+      color: #60a5fa;
+      border-bottom: 2px solid #38bdf8;
+      padding-bottom: 0.4rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #1e293b;
+      color: #e2e8f0;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th, td {
+      border: 1px solid #334155;
+      padding: 0.75rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #0f172a;
+      font-size: 0.9rem;
+      color: #94a3b8;
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    a {
+      color: #38bdf8;
+    }
+
+    @keyframes fadeSlideIn {
+      0% { transform: translateY(50px) rotateY(10deg); opacity: 0; }
+      100% { transform: translateY(0) rotateY(0); opacity: 1; }
+    }
+
+    @keyframes floatIn {
+      0% { transform: rotateX(20deg); opacity: 0; }
+      100% { transform: rotateX(0); opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 2rem; }
+      .container { padding: 1rem; }
+      section { transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GSPL Coin</h1>
+    <p>Global Security Protocol Layer</p>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>1. Introduction</h2>
+      <p>GSPL Coin is a decentralized cryptocurrency focused on real-world utility, fast transactions, low fees, and community governance.</p>
+    </section>
+    <section>
+      <h2>2. Mission Statement</h2>
+      <p>To build a fast, secure, and community-governed digital asset infrastructure that supports global payments, staking, NFTs, and DeFi.</p>
+    </section>
+    <section>
+      <h2>3. The Problem</h2>
+      <ul>
+        <li>High blockchain fees</li>
+        <li>Slow transaction speeds</li>
+        <li>Limited everyday utility</li>
+        <li>Centralized control</li>
+      </ul>
+    </section>
+    <section>
+      <h2>4. The GSPL Solution</h2>
+      <ul>
+        <li>Low-cost blockchain transactions</li>
+        <li>Cross-chain support (ETH, BNB, more)</li>
+        <li>Real-world merchant use</li>
+        <li>DAO governance</li>
+      </ul>
+    </section>
+    <section>
+      <h2>5. Technology Stack</h2>
+      <ul>
+        <li>Layer-1 or Layer-2 PoS Chain</li>
+        <li>Solidity Smart Contracts</li>
+        <li>Multi-wallet Compatibility</li>
+        <li>Layer-2 Scaling (ZK/Optimistic)</li>
+      </ul>
+    </section>
+    <section>
+      <h2>6. Tokenomics</h2>
+      <table>
+        <tr><th>Attribute</th><th>Value</th></tr>
+        <tr><td>Token Name</td><td>GSPL Coin</td></tr>
+        <tr><td>Symbol</td><td>GSPL</td></tr>
+        <tr><td>Total Supply</td><td>1,800,000,000,000</td></tr>
+        <tr><td>Initial Circulation</td><td>100,000,000</td></tr>
+        <tr><td>Decimals</td><td>7</td></tr>
+      </table>
+      <ul>
+        <li>40% Public Sale</li>
+        <li>20% Team & Founders</li>
+        <li>15% Ecosystem</li>
+        <li>10% Advisors</li>
+        <li>10% Staking</li>
+        <li>5% Reserve</li>
+      </ul>
+    </section>
+    <section>
+      <h2>7. Use Cases</h2>
+      <ul>
+        <li>P2P Payments</li>
+        <li>Gaming Rewards</li>
+        <li>NFT Transactions</li>
+        <li>Staking & Governance</li>
+        <li>Merchant Adoption</li>
+      </ul>
+    </section>
+    <section>
+      <h2>8. Roadmap</h2>
+      <ul>
+        <li><strong>Q3 2025:</strong> Smart contract launch</li>
+        <li><strong>Q4 2025:</strong> Token sale, DEX listings</li>
+        <li><strong>Q1 2026:</strong> CEX listing, NFT market</li>
+        <li><strong>Q2 2026:</strong> Cross-chain bridge</li>
+      </ul>
+    </section>
+    <section>
+      <h2>9. Governance</h2>
+      <p>GSPL is governed via a decentralized DAO, with token-holder voting rights.</p>
+    </section>
+    <section>
+      <h2>10. Security & Compliance</h2>
+      <ul>
+        <li>Audited Contracts</li>
+        <li>KYC/AML Ready</li>
+        <li>Open-Source Development</li>
+      </ul>
+    </section>
+    <section>
+      <h2>11. Team</h2>
+      <p>Community-led decentralized project</p>
+    </section>
+    <section>
+      <h2>12. Legal Disclaimer</h2>
+      <p>GSPL is a utility token and does not represent equity. Participation is voluntary.</p>
+    </section>
+    <section>
+      <h2>13. Contact & Community</h2>
+      <ul>
+        <li><a href="#">www.gsplcoin.org</a></li>
+        <li><a href="#">Telegram</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Discord</a></li>
+        <li><a href="mailto:info@gsplcoin.org">Email</a></li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 GSPL Coin. All rights reserved.
+  </footer>
+</body>
+</html>
